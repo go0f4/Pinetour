@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .flex-align-center {
+    align-items: center;
+    display: inline-flex;
+    gap: 24px;
+  }
+  .flex-direction {
+    display: flex;
+    flex-direction: column;
+  }
+  .no-repeat-cover-width-height {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+  }
+  .section1 {
+    background-image: url(picture/Image.png);
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    z-index: 10;
+  }
+  .hero1 {
+    width: 100vw;
+    height: 100px;
+    gap: 100px;
+  }
+  .logoText {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .anchors {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .EN {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: #fff;
+  }
+  .display-center-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .text {
+    height: 100vh;
+    padding-top: 120px;
+    text-align: center;
+    font-family: "Bebas Neue";
+  }
+  #pure_magic {
+    color: #e8edf2;
+    font-size: clamp(32px, 5vw, 80px);
+    font-weight: 400;
+  }
+  #awits {
+    color: #fdfdfe;
+    font-size: clamp(80px, 20vw, 250px);
+    font-weight: 400;
+  }
+  #a2024 {
+    color: #ffffff;
+    font-size: clamp(24px, 5vw, 64px);
+    font-weight: 900;
+    margin-bottom: 120px;
+  }
+  
+  .section2 {
+    background: #d8e4e9;
+  }
+  .hero2 {
+    width: 1440px;
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+  }
+  .imgCard {
+    position: relative;
+    width: 275px;
+    height: 370px;
+    border-radius: 40px;
+    font-size: 30px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+  }
+  .imgCard:hover {
+    box-shadow: -8px -8px 0px 0px rgba(31, 114, 170, 0.46),
+      8px 8px 0px 0px rgba(41, 114, 139, 0.25);
+  }
+  .cardText {
+    position: absolute;
+    color: #fdfdfe;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    text-shadow: 0px 4px 4.9px rgba(0, 0, 0, 0.65);
+    font-family: "Bebas Neue";
+  }
+  
+  .section3 {
+    background-image: url(picture/map.png);
+  }
+  .align-items {
+    align-items: center;
+  }
+  .words {
+    padding: 40px 0px 100px 0px;
+    height: 10%;
+  }
+  .text-align {
+    text-align: center;
+  }
+  .Destination {
+    color: #000;
+    font-size: 42px;
+    font-weight: 600;
+  }
+  .Pack {
+    color: rgba(24, 24, 27, 0.7);
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .hero3 {
+    width: 1440px;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+  }
+  .boxsZai {
+    gap: 20px;
+  }
+  .display-position {
+    display: flex;
+    position: relative;
+  }
+  .min-width {
+    gap: 24px;
+    min-width: 513px;
+  }
+  .roundedBox {
+    display: flex;
+    align-items: center;
+    width: 413px;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 9999px;
+    height: 52px;
+  }
+  .roundedBox1 {
+    background-color: #eee9d9;
+  }
+  .roundedBox1:hover {
+    border: 3px, solid, white;
+  }
+  .day {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .day-one:hover ~ .hover-image-1 {
+    display: block !important;
+  }
+  .location-info {
+    gap: 4px;
+  }
+  .region {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .hover-image-1 {
+    position: absolute;
+    top: 200px;
+    left: 1000px;
+    display: none;
+    transform: rotate(-5deg);
+  }
+  .roundedBox2 {
+    background-color: rgba(139, 184, 193, 0.8);
+  }
+  .roundedBox2:hover {
+    border: 3px, solid, white;
+  }
+  .day-two:hover ~ .hover-image-2 {
+    display: block !important;
+  }
+  .hover-image-2 {
+    position: absolute;
+    top: -48px;
+    left: 680px;
+    display: none;
+    transform: rotate(-5deg);
+  }
+  .roundedBox3 {
+    background-color: rgba(170, 216, 215, 0.8);
+  }
+  .roundedBox3:hover {
+    border: 3px, solid, white;
+  }
+  .day-three:hover ~ .hover-image-3 {
+    display: block !important;
+  }
+  .hover-image-3 {
+    position: absolute;
+    top: 0px;
+    left: 550px;
+    display: none;
+    transform: rotate(-5deg);
+  }
+  .roundedBox4 {
+    background-color: rgba(139, 192, 189, 0.8);
+  }
+  .roundedBox4:hover {
+    border: 3px, solid, white;
+  }
+  .day-four:hover ~ .hover-image-4 {
+    display: block !important;
+  }
+  .hover-image-4 {
+    position: absolute;
+    top: -430px;
+    left: 570px;
+    display: none;
+    transform: rotate(-5deg);
+  }
+  .roundedBox5 {
+    background-color: rgba(151, 204, 224, 0.8);
+  }
+  .roundedBox5:hover {
+    border: 3px, solid, white;
+  }
+  .day-five:hover ~ .hover-image-5 {
+    display: block !important;
+  }
+  .hover-image-5 {
+    position: absolute;
+    top: -400px;
+    left: 702px;
+    display: none;
+    transform: rotate(-5deg);
+  }
+  .maps {
+    position: relative;
+    width: 640px;
+    height: 640px;
+  }
+  .pin {
+    width: 34px;
+    height: 34px;
+  }
+  .pin1 {
+    position: absolute;
+    top: 164px;
+    left: 107px;
+  }
+  .pin2 {
+    position: absolute;
+    top: 42px;
+    left: 279px;
+  }
+  .pin3 {
+    position: absolute;
+    top: 416px;
+    left: 279px;
+  }
+  .pin4 {
+    position: absolute;
+    top: 181px;
+    left: 492px;
+  }
+  .pin5 {
+    position: absolute;
+    top: -34px;
+    left: 80px;
+  }
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #9fc6de;
+    background-image: url(picture/BLUR.png);
+    background-position: center;
+    flex-direction: column;
+  }
+  .hero4 {
+    width: 1440px;
+    flex-direction: row;
+  }
+  .package-container-space {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+  .package-container {
+    width: 384px;
+    height: 527px;
+    border-radius: 40px;
+    background: #fafbfc;
+  }
+  .heart-text {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 40px 0px 24px 32px;
+  }
+  .icon {
+    display: inline-flex;
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+  }
+  .budget {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 16px;
+  }
+  .content {
+    width: 100%;
+    height: 100%;
+    padding: 12px 0px 48px 32px;
+    justify-content: end;
+  }
+  .detail {
+    gap: 10px;
+    margin-bottom: auto;
+  }
+  .fivea {
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+    display: inline-block;
+    gap: 20px;
+    justify-content: start;
+  }
+  .ess {
+    display: inline-block;
+    color: #919191;
+    font-size: 16px;
+    font-weight: 500;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: start;
+    padding: 0px 0px 5px 0px;
+  }
+  .includes {
+    gap: 16px;
+  }
+  .includes-title {
+    margin-left: 40px;
+  }
+  .checkword {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+  .group {
+    display: inline-block;
+    color: #3f4145;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  button {
+    border-radius: 9999px;
+    padding: 12px 16px;
+    background: #a4d1e2;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    width: 318px;
+    height: 48px;
+    border: none;
+  }
+  .package-container:hover {
+    box-shadow: -8px -8px 0px 0px rgba(46, 65, 71, 0.4),
+      8px 8px 0px 0px rgba(41, 114, 139, 0.25);
+  }
+  .package-container:hover .content button {
+    background-color: black;
+    color: white;
+  }
+  .zaipopular {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-items: center;
+  }
+  .popular {
+    width: 68px;
+    height: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    color: #fafbfc;
+  }
+  .nnc {
+    width: 82px;
+    height: 25px;
+    border-radius: 9999px;
+    padding: var(--4-px-unit-1, 4px) var(--16-px-unit-4, 16px);
+    gap: 10px;
+    background-color: #6972b5;
+  }
+  .logos {
+    width: 68px;
+    height: 15px;
+    line-height: normal;
+    color: #6972b5;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .zai_logos {
+    display: flex;
+    width: 1200px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .logos_nnc {
+    border-radius: 9999px;
+    min-height: 44px;
+    padding: 10px 20px;
+    background: #fafbfc;
+  }
+  .container {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 200px;
+    margin-left: 30px;
+  }
